@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="net.msp.kaituo.wepos">
+    //网络权限
+    <uses-permission android:name="android.permission.INTERNET" />
 
+    <!--
+    蓝牙的权限是normal级权限，只需要在Manifest里面申请即可，
+    但是位置权限是dangerous级权限，除了需要在Manifest里申请之外，
+    还需要在代码中进行动态申请，并跟踪用户对权限的确认结果！！
+    （没有授权，你肯定是不能使用完整的功能的，不过好像不影响我们打开蓝牙，蓝牙的设备搜索功能是没有办法使用的）
+    -->
+    //蓝牙权限(包括开启设备，查询周边设备、设置可见的时间等)
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    //位置权限
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- 以下是使用wifi访问网络所需要的权限 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    //修改网络状态的权限
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    //修改wifi状态的权限
+    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+    //访问网络权限
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    //访问wifi权限
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,13 +33,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.activity.LoginActivity"></activity>
     </application>
 
 </manifest>

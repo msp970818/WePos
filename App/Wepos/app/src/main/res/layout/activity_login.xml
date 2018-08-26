@@ -1,56 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activity.LoginActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#fff">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:orientation="vertical">
+    <include
+        android:id="@+id/login_title"
+        layout="@layout/title_layout"/>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="         账        号：" />
-
-        <EditText
-            android:id="@+id/login_et_user"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:hint="请输入账号"/>
-    </LinearLayout>
+    <include
+        android:id="@+id/login_input"
+        layout="@layout/login_input_layout"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small"
+        android:paddingTop="@dimen/margin_small"
         android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:gravity="center"
+        >
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+        <CheckBox
+            android:id="@+id/remember_password"
+            android:padding="@dimen/dp_10"
+            android:textSize="@dimen/text_size_normal"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
             android:layout_weight="1"
-            android:text="         密        码：" />
-
-        <EditText
-            android:id="@+id/login_et_pwd"
-            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:hint="请输入账号"/>
+            android:text="@string/check_password"
+            android:textColor="@color/top_bar_normal_bg" android:checked="false"/>
+
+        <CheckBox
+            android:id="@+id/checkBox_autologin"
+            android:padding="@dimen/dp_10"
+            android:textSize="@dimen/text_size_normal"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/check_autologin"
+            android:textColor="@color/top_bar_normal_bg"
+            android:checked="false"/>
+
     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_huge"
+        android:paddingBottom="@dimen/margin_small"
+        android:paddingTop="@dimen/margin_small"
+        android:text="@string/login"
+        android:background="@drawable/btn_orange_selector"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_large"/>
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:background="@drawable/btn_orange_selector"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_large"
+            android:layout_alignBaseline="@+id/login_button"
+            android:layout_alignBottom="@+id/login_button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="49dp"
+            android:layout_marginEnd="49dp" />
+
+    </RelativeLayout>
 
 </LinearLayout>

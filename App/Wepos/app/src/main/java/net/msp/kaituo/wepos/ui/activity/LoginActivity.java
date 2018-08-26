@@ -1,11 +1,8 @@
 package net.msp.kaituo.wepos.ui.activity;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
+import android.support.v7.app.AppCompatActivity;
 
 import net.msp.kaituo.wepos.R;
 

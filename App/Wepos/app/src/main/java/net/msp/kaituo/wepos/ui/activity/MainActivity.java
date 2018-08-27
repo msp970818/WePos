@@ -18,15 +18,5 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Click = (Button) findViewById(R.id.Click);
-        Click.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,LoginActivity.class);
-                Toast.makeText(MainActivity.this,"!!",Toast.LENGTH_SHORT).show();
-                startActivity(intent);
-            }
-        });
     }
 }

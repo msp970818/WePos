@@ -7,7 +7,11 @@
     android:background="@color/orange_light">
 
     <Button
+<<<<<<< HEAD
         android:id="@+id/title_btn_back"
+=======
+        android:id="@+id/back_button"
+>>>>>>> e4fc819e3f0582dd6af7cee514df39ac9bfd9c68
         android:layout_width="30sp"
         android:layout_height="30sp"
         android:background="@drawable/back"/>
@@ -16,7 +20,11 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentRight="true"
+<<<<<<< HEAD
         android:text="WePos"
+=======
+        android:text="小学生出题系统"
+>>>>>>> e4fc819e3f0582dd6af7cee514df39ac9bfd9c68
         android:gravity="center"
         android:textSize="25sp"
         android:textColor="@color/white"

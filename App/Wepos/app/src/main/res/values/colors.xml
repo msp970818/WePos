@@ -4,7 +4,10 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+<<<<<<< HEAD
     <color name="green">#83bf27</color>
+=======
+>>>>>>> e4fc819e3f0582dd6af7cee514df39ac9bfd9c68
 
 
     <color name="transparent_half">#a0000000</color>
@@ -29,7 +32,10 @@
     <color name="orange_main">#ec6f1a</color>
     <color name="orange_light">#ffd39b</color>
     <color name="orange_deep">#ff6f3a</color>
+<<<<<<< HEAD
     <color name="orange_little_light">#f9885f</color>
+=======
+>>>>>>> e4fc819e3f0582dd6af7cee514df39ac9bfd9c68
     <color name="orange_most">#C76114</color>
     <color name="orange_litter">#80aa6136</color>
 

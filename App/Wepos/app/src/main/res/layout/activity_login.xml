@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-<<<<<<< HEAD
-=======
-    xmlns:tools="http://schemas.android.com/tools"
->>>>>>> e4fc819e3f0582dd6af7cee514df39ac9bfd9c68
     android:id="@+id/activity_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -27,12 +23,8 @@
         android:paddingBottom="@dimen/margin_small"
         android:paddingTop="@dimen/margin_small"
         android:orientation="horizontal"
-<<<<<<< HEAD
         android:gravity="center">
-=======
-        android:gravity="center"
-        >
->>>>>>> e4fc819e3f0582dd6af7cee514df39ac9bfd9c68
+
 
         <CheckBox
             android:id="@+id/remember_password"

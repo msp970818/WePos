@@ -1,6 +1,5 @@
 package net.msp.kaituo.wepos.ui.activity;
 
-<<<<<<< HEAD
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AlertDialog;
@@ -13,11 +12,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-=======
-
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
->>>>>>> e4fc819e3f0582dd6af7cee514df39ac9bfd9c68
 
 import net.msp.kaituo.wepos.R;
 

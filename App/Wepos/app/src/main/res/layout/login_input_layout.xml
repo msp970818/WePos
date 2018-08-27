@@ -23,11 +23,7 @@
             android:src="@drawable/icon_login_account"/>
 
         <EditText
-<<<<<<< HEAD
             android:id="@+id/input_edit_account"
-=======
-            android:id="@+id/edit_name"
->>>>>>> e4fc819e3f0582dd6af7cee514df39ac9bfd9c68
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -66,13 +62,8 @@
             android:layout_marginLeft="@dimen/margin_tiny"
             android:scaleType="fitXY"
             android:src="@drawable/icon_login_pw"/>
-
         <EditText
-<<<<<<< HEAD
             android:id="@+id/input_edit_password"
-=======
-            android:id="@+id/edit_password"
->>>>>>> e4fc819e3f0582dd6af7cee514df39ac9bfd9c68
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -87,6 +78,7 @@
             android:textColor="@android:color/black"
             android:textColorHint="@color/tv_gray_deep"
             android:textSize="@dimen/text_size_normal"/>
+
         <ImageView
             android:id="@+id/iv_see_password"
             android:layout_width="@dimen/image_height_litter"

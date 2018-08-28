@@ -49,7 +49,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.HomeActivity"></activity>
+        <activity android:name=".ui.activity.HomeActivity" />
+        <activity android:name=".ui.fragment.TwoFragmet" />
+        <activity android:name=".ui.fragment.OneFragment" />
+        <activity android:name=".ui.fragment.ThreeFragment"></activity>
     </application>
 
 </manifest>

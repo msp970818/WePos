@@ -18,6 +18,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -34,7 +35,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = "MainActivity";
     //权限请求码
@@ -58,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
     private WifiBroadcastReceiver wifiReceiver;
 
     private int connectType = 0;//1：连接成功？ 2 正在连接（如果wifi热点列表发生变需要该字段）
+    private Button btn_next;
 
 
     @Override
@@ -65,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         pbWifiLoading = (ProgressBar) this.findViewById(R.id.pb_wifi_loading);
+        btn_next = (Button) this.findViewById(R.id.wifi_btn_next);
+        btn_next.setOnClickListener(this);
 
         hidingProgressBar();
         mHasPermission = checkPermission();
@@ -136,6 +140,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         this.unregisterReceiver(wifiReceiver);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.wifi_btn_next :
+                Intent intent = new Intent(MainActivity.this,LoginActivity.class);
+                startActivity(intent);
+        }
     }
 
     //监听wifi状态

@@ -32,5 +32,7 @@ dependencies {
     // https://mvnrepository.com/artifact/com.android.support/recyclerview-v7
     implementation group: 'com.android.support', name: 'recyclerview-v7', version: '+'
 
+    implementation 'com.ashokvarma.android:bottom-navigation-bar:2.0.5'
+
 
 }

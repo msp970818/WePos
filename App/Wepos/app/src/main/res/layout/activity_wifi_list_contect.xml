@@ -35,8 +35,21 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recy_list_wifi"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="500dp"></android.support.v7.widget.RecyclerView>
 
-    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="跳过"/>
+    </LinearLayout>
+
+
 
 </LinearLayout>

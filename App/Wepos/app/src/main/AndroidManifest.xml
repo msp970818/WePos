@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="net.msp.kaituo.wepos">
+
+    <!-- 读写的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     //网络权限
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -22,10 +26,13 @@
     //修改网络状态的权限
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     //修改wifi状态的权限
-    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     //访问网络权限
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     //访问wifi权限
+    <!-- <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/> -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -42,7 +49,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.WifiListContectActivity"></activity>
+        <activity android:name=".ui.activity.HomeActivity"></activity>
     </application>
 
 </manifest>

@@ -7,14 +7,13 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import net.msp.kaituo.wepos.R;
 
 public class SlpashActivity extends AppCompatActivity {
 
     private TextView slpash_tv_versionName;
-    private final int SPLASH_DISPLAY_LENGHT = 3000;  //延迟3秒
+    private final int SPLASH_DISPLAY_LENGHT = 2000;  //延迟3秒
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,18 +30,15 @@ public class SlpashActivity extends AppCompatActivity {
         //2.检测是否有更新,如果有更新，提示用户下载
         //3.app开启展示logo
         countNum();
-
-
-
     }
 
     private void countNum() {//数秒
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SlpashActivity.this, LoginActivity.class);
-                SlpashActivity.this.startActivity(intent);
-                SlpashActivity.this.finish();
+                Intent intent = new Intent(SlpashActivity.this, MainActivity.class);
+                startActivity(intent);
+                finish();
             }
         }, SPLASH_DISPLAY_LENGHT);
     }

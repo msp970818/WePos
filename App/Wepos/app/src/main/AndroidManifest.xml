@@ -43,16 +43,19 @@
         <activity android:name=".ui.activity.MainActivity" />
         <activity android:name=".ui.activity.LoginActivity" />
         <activity android:name=".ui.activity.SlpashActivity">
+        </activity>
+        <activity android:name=".ui.activity.HomeActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.HomeActivity" />
-        <activity android:name=".ui.fragment.TwoFragmet" />
-        <activity android:name=".ui.fragment.OneFragment" />
-        <activity android:name=".ui.fragment.ThreeFragment"></activity>
+        <activity android:name=".ui.activity.PandianActivity" />
+        <activity android:name=".ui.activity.HelpActivity" />
+        <activity android:name=".ui.activity.SettingActivity">
+
+        </activity>
     </application>
 
 </manifest>
